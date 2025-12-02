@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lee Ambrose Park | Logistics & Supply Chain Leader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+    <div class="hero-content">
+      <!>
+      <div class="avatar-placeholder">LP</div>
+      <h1>Lee Ambrose Park</h1>
+      <p class="tagline">
+        Transitioning Army Logistics Officer · Supply Chain & Project Management · Georgetown University, M.P.S.
+      </p>
+      <div class="hero-links">
+        <a href="mailto:YOUREMAIL@EXAMPLE.COM">Email</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="/LeePark_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>About</h2>
+      <p>
+        I’m a U.S. Army logistics officer and graduate student at Georgetown University
+        specializing in supply chain management, analytics, and project leadership.
+        I build resilient, data-driven supply chains and lead teams in complex environments.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience Highlights</h2>
+      <ul class="card-list">
+        <li class="card">
+          <h3>Army Logistics & Maintenance Leadership</h3>
+          <p>
+            Led a 36-person maintenance platoon supporting engineer formations; managed
+            multi-million-dollar equipment fleets, kept readiness in the high 90s, and
+            supported multiple training exercises and missions.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Brigade-Level Supply Chain Support</h3>
+          <p>
+            Provided brigade-level logistics and deployment support, analyzing sustainment
+            readiness and coordinating supply, transportation, and maintenance for multiple
+            battalions.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Graduate Studies – Georgetown University</h3>
+          <p>
+            MPS in Supply Chain Management & Logistics focused on analytics, strategic sourcing,
+            and project management for complex global networks.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+      <ul class="card-list">
+        <li class="card">
+          <h3>CSSB Readiness Dashboard</h3>
+          <p>
+            Concept for a real-time Power BI dashboard integrating equipment readiness, licensing,
+            and supply flows to support commander decision-making.
+          </p>
+        </li>
+        <li class="card">
+          <h3>TCN Big Data Supply Chain Capstone</h3>
+          <p>
+            Big data strategy for a healthcare network, focusing on supplier risk, analytics
+            architecture, and AI-enabled decision support.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        The best way to reach me is via email or LinkedIn. I’m interested in roles in
+        supply chain management, operations, logistics, and project management.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Lee Ambrose Park · leeambrosepark.com</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+Scroll down and click “Commit new file” (keep the default message).
+
+🔧 Later, replace YOUREMAIL@EXAMPLE.COM and the LinkedIn URL with your real info.
+
+3. Add styles.css
+Again click “Add file” → “Create new file”.
+
+Name it: styles.css
+
+Paste this:
+
+css
+Copy code
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #050816;
+  color: #e5e7eb;
+}
+
+/* HERO */
+
+.hero {
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+}
+
+.hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  border: 3px solid #4b5563;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+h1 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin-top: 0.25rem;
+  color: #9ca3af;
+}
+
+.hero-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.hero-links a:hover {
+  background: #111827;
+}
+
+/* MAIN CONTENT */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #111827;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #111827;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* MOBILE TWEAKS */
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+  </body>
